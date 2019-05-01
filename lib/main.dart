@@ -10,10 +10,10 @@ class ImcCalculator extends StatelessWidget {
       theme: ThemeData.dark(),
       home: Home(),
       localizationsDelegates: [
-        GlobalWidgetsLocalizations.delegate,
         GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
       ],
-      localeResolutionCallback: (locale,locales) => locale,
+      localeResolutionCallback: (l, s) => l,
     );
   }
 }
