@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:imc_calculator/scenes/home/home.dart';
 
 class ImcCalculator extends StatelessWidget {
@@ -6,8 +7,13 @@ class ImcCalculator extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "IMC Calculator",
-      color: Colors.green,
+      theme: ThemeData.dark(),
       home: Home(),
+      localizationsDelegates: [
+        GlobalWidgetsLocalizations.delegate,
+        GlobalMaterialLocalizations.delegate,
+      ],
+      localeResolutionCallback: (locale,locales) => locale,
     );
   }
 }
