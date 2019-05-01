@@ -1,3 +1,3 @@
-# imc_calculator
+# IMC Calculator
 
 A simple app to calculate your IMC
