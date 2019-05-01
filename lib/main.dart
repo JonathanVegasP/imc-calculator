@@ -19,3 +19,4 @@ class ImcCalculator extends StatelessWidget {
 }
 
 void main() => runApp(ImcCalculator());
+//Created by Jonathan Vegas Peixoto
